@@ -1,0 +1,59 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    background: rgb(2,0,36);
+    background-color: #fff;
+}
+
+.myForm{
+background-color: rgba(0,0,0,0.5) !important;
+padding: 15px !important;
+border-radius: 15px !important;
+color: white;
+
+}
+#tds{
+    background-color: black;
+    color: white;
+}
+.col-sm-9.col-sm-offset-1 {
+    margin-top: 60px;
+}
+input{
+   border-radius:0 15px 15px 0 !important;
+
+}
+input:focus{
+outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
+
+}
+
+.br-15{
+border-radius: 15px 0 0 15px !important;
+}
+#remove_more{
+color: white;
+border-radius: 15px !important;
+background-color: #fc5c65;
+display: none;
+
+}
+
+.submit_btn{
+border-radius: 15px !important;
+background-color: #95c714 !important;
+border: 0 !important;
+}
+.card-footer{
+display:flex;
+justify-content: center;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.shadow-sm {
+    border-style: groove;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: blueviolet;
+}

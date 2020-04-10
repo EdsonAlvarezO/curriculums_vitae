@@ -1,0 +1,113 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    background: rgb(2,0,36);
+    background-color: #fff;
+
+}
+.myForm{
+background-color: rgba(0,0,0,1) !important;
+padding: 15px !important;
+border-radius: 15px !important;
+color: white;
+
+}
+
+input{
+border-radius:0 15px 15px 0 !important;
+
+}
+input:focus{
+outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
+
+}
+
+.br-15{
+border-radius: 15px 0 0 15px !important;
+}
+#label{
+background-color:black;
+color:#fff;
+}
+#remove_more{
+color: white;
+background-color: #fc5c65;
+border-radius: 15px ;
+display: none;
+
+}
+#myF{
+width: 90%;  
+}
+
+.submit_btn{
+border-radius: 15px !important;
+background-color: #95c714 !important;
+border: 0 !important;
+}
+.card-footer{
+display:flex;
+justify-content: center;
+}
+.card.float-left {
+width: 100%;
+}
+.buttons{
+display: flex;
+justify-content: flex-end;
+
+}
+td{
+color:#fff;
+background-color:black;
+}
+h5.card-title.text-center {
+    background-color: #fff;
+    color: black;
+    font-stretch: initial;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 30px;
+}
+div#nm {
+    display: flex;
+    justify-content: center;
+}
+.body{
+    width: 700px;
+    background-color: black;
+    color: #fff;
+}
+#myInfo {
+    margin-left: 30%;
+    background-color: #B07296;
+    margin-top: 10%;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-dark.shadow-sm {
+    border-style: groove;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #fff;
+}
+.input-group {
+    width: 308px;
+}
+.col-md-6.col-md-offset-3.center {
+    margin-left: 40%;
+}
+img#imageProfile {
+    width: 337px;
+    height: 333px;
+}
+button#fakebtn {
+    margin-left: 137%;
+    margin-top: 15%;
+}   
+p#namefile {
+    width: 116%;
+    margin-left: 90%;
+    
+} 

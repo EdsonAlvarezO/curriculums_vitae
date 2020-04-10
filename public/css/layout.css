@@ -1,0 +1,51 @@
+
+
+.btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    border:0px;
+    margin-right:4px;
+    margin-top:0px;
+    height: 40px;
+    
+}
+.btn3d:hover {
+    background-color: #fff;
+}
+.btn3d:focus {
+    outline:medium none;
+}
+.btn3d:active {
+    top:9px;
+}
+
+a#options {
+    color: #d4bfce;
+    
+}
+.title{
+    font-style: italic;
+    font-size: 20px;
+}
+html, body{
+        height: 100%;
+        margin: 0;
+        background: rgb(2,0,36);
+        background-color: white;
+    }
+    .bg-dark {
+        background-color: black!important;
+}
+.myconteiner{
+margin-left: 10%;
+margin-right: 0%;
+}
+.btn-default {
+    border-color: #B07296;
+    
+}
+
+nav#navbar {
+    background-color: #191f22;
+}
