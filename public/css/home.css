@@ -15,7 +15,9 @@ html,body{
     margin-top: 200px;
 }
     
-
+.nav-side-menu:hover > #lis {
+     background-color: yellow; 
+}
 .nav-side-menu {
     overflow: auto;
     font-family: verdana;
