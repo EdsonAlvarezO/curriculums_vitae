@@ -7,11 +7,12 @@ html,body{
    background-color: #fff;
 }
 .myForm{
-background-color: rgba(0,0,0,1) !important;
-padding: 15px !important;
-border-radius: 15px !important;
-color: white;
-}
+    background-color:white;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    color: black;
+    border-color: black;
+    }
 .d-flex.justify-content-center {
     margin-bottom: 50px;
 }

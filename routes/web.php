@@ -59,5 +59,8 @@ Route::get('skills/destroy/{id}', 'SkillsController@destroy')->name('skills.dest
 Route::post('skills/create', 'SkillsController@create')->name('skills.create');
 
 Route::get('images', 'ImagesController@index')->name('image');
+
+Route::get('templates', 'TemplatesController@index')->name('templates');
+
 Route::post('images.upload', 'ImagesController@upload')->name('upload');
 Auth::routes();

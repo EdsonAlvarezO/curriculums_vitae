@@ -11,19 +11,23 @@ html,body{
     height: 20%;
     margin-bottom: 3%;
 }
+#titleMenu{
+    margin-top: 200px;
+}
+    
+
 .nav-side-menu {
     overflow: auto;
     font-family: verdana;
     font-size: 12px;
     font-weight: 200;
-    background-color: black;
+    background-color: white;
     position: fixed;
     top: 0px;
     width: 24%;
     height: 100%;
     color: #e1ffff;
-    margin-top: 56px;
-    border-style: outset;
+    margin-top: 71px;
     border-color: #fff;
     border-top: 0;
 }
@@ -90,12 +94,13 @@ vertical-align: middle;
 }
 .nav-side-menu li {
 padding-left: 0px;
-border-left: 3px solid #2e353d;
-border-bottom: 1px solid #23282e;
+background-color: #191f22;
+margin-bottom: 10px;
+
 }
 .nav-side-menu li a {
 text-decoration: none;
-color: #e1ffff;
+color: white;
 font-size: 25px;
 font-family: cursive;
     font-style: italic;

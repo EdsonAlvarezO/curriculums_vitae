@@ -4,12 +4,11 @@
 <div  class="container-fluid">
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="nav-side-menu">
-                        <h4 class="text-center">Who are you?</h4>
+                    <div class="nav-side-menu animated bounceInLeft">
                         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">
-                                <li class="text-center">
+                                <li class="text-center" id="titleMenu">
                                     <a href="{{ route('personal') }}"> About me
                                     </a>
                                 </li>
