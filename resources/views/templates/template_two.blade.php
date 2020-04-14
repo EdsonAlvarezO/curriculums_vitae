@@ -2,7 +2,11 @@
 @section('content')
 <link href="{{ asset('css/template_two.css') }}" rel="stylesheet">
 <body>
-<a class="btn btn-success animated pulse" href="{{ route('templates')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
+<div class="backAndNext">
+<a class="btn btn-success animated pulse" href="{{ route('template_one')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
+<a class="btn btn-success " href="{{ route('templates')}}" id="btnBack">Templates</a>
+<a class="btn btn-success animated pulse" href="{{ route('template_one')}}" id="btnBack"> Next <i class="far fa-hand-point-right"></i></a>
+</div>
 <div class="sendAndDowload">
     <form action="" method="post">
             <label for="" id="email">Email:</label>

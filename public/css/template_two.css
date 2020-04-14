@@ -21,7 +21,7 @@
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
         #btnBack{
-            width: 80px;
+            width: 87px;
             height: 40px;
             background-color: #191f22;
             color: #d3bfcd;
@@ -48,4 +48,9 @@
         }
         #inputEmail{
             height: 35px;
+        }
+        .backAndNext{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }

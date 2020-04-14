@@ -1,20 +1,24 @@
 @extends('layouts.app')
 @section('content')
 <link href="{{ asset('css/template_one.css') }}" rel="stylesheet">
+<div class="backAndNext">
 <a class="btn btn-success animated pulse" href="{{ route('templates')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
-<div class="sendAndDowload">
-    <form action="" method="post">
-            <label for="" id="email">Email:</label>
-            <input type="email" id="inputEmail" required ="true">
-            <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
-    </form>
-    <form action="">
-        <button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
-    </form>
+<a class="btn btn-success " href="{{ route('templates')}}" id="btnBack">Templates</a>
+<a class="btn btn-success animated pulse" href="{{ route('template_two')}}" id="btnBack"> Next <i class="far fa-hand-point-right"></i></a>
 </div>
 <div id="doc2" class="yui-t7">
 	<div id="inner">
-	
+	<div class="sendAndDowload">
+		<form action="" method="post">
+				<label for="" id="email">Email:</label>
+				<input type="email" id="inputEmail" required ="true">
+				<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
+		</form>
+		<form action="">
+			<button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
+		</form>
+	</div>
+
 		<div id="hd">
 			<div class="yui-gc">
 				<div class="yui-u first">
