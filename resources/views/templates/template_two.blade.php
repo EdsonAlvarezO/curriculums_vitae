@@ -1,11 +1,14 @@
 @extends('layouts.app')
 @section('content')
-<link href="{{ asset('css/template_two.css') }}" rel="stylesheet">
+<head>
+    <link href="{{ public_path('css/template_two.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/template_two.css') }}" rel="stylesheet">
+</head>
 <body>
 <div class="backAndNext">
-<a class="btn btn-success animated pulse" href="{{ route('template_one')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
+<a class="btn btn-success" href="{{ route('templates')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
 <a class="btn btn-success " href="{{ route('templates')}}" id="btnBack">Templates</a>
-<a class="btn btn-success animated pulse" href="{{ route('template_one')}}" id="btnBack"> Next <i class="far fa-hand-point-right"></i></a>
+<a class="btn btn-success" href="{{ route('template_two')}}" id="btnBack"> Next <i class="fas fa-hand-point-right"></i></a>
 </div>
 <div class="sendAndDowload">
     <form action="" method="post">
@@ -13,14 +16,14 @@
             <input type="email" id="inputEmail" required ="true">
             <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
     </form>
-    <form action="">
+    <form action="{{ route('descargar' , 2)}}">
         <button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
     </form>
 </div>
     <div id="page-wrap">
     
-        <img src="../background/email.jpg" id="pic" />
-    
+        <!-- <img src="{{ public_path('css/template_two.css') }}" id="pic" /> -->
+        <img src="{{ asset('background/email.jpg') }}" id="pic" />
         <div id="contact-info" class="vcard">
         
             <!-- Microformats! -->
@@ -102,7 +105,4 @@
     </div>
 
 </body>
-
-</html>
-
 @endsection

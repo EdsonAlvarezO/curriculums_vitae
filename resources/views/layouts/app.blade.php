@@ -31,7 +31,7 @@
                     <ul class="navbar-nav mr-auto">
                         @if(auth()->id() != null)
                             <li class="nav-item">
-                                <a class=" btn3d btn btn-default btn-lg nav-link" id="options" href="{{ route('personal') }}">Menu</a>
+                                <a class=" btn3d btn btn-default btn-lg nav-link" id="options" href="{{ route('personal') }}">Information</a>
                             </li>
                             <li class="nav-item">
                                 <a class=" btn3d btn btn-default btn-lg nav-link" id="options" href="{{ route('templates') }}">Explore designs</a>

@@ -63,6 +63,9 @@ Route::get('images', 'ImagesController@index')->name('image');
 Route::get('templates', 'TemplatesController@index')->name('templates');
 Route::get('templates/template_one', 'TemplatesController@template_one')->name('template_one');
 Route::get('templates/template_two', 'TemplatesController@template_two')->name('template_two');
+Route::get('templates/template_three', 'TemplatesController@template_three')->name('template_three');
 
 Route::post('images.upload', 'ImagesController@upload')->name('upload');
 Auth::routes();
+
+Route::get('donwload/{template}','pdfController@downloadpdf')->name('descargar');

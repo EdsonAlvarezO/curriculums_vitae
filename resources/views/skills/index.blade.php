@@ -51,7 +51,7 @@
         <td><a href="{{ route('skills.destroy', $data) }}" onclick="return confirm('Seugas')" class="btn-danger circle-table"><i class="fas fa-trash"></i></a></td>
       </tr>
 
-      @endforeach
+      @endforeach 
     </tbody>
   </table>
   {{ $skills->links() }}
