@@ -3,26 +3,53 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\pdfEmail;
 use App;
 class pdfController extends Controller
 {
     public function downloadpdf($template){
+        $contact = App\Contact::where('user_id', auth()->id())
+        ->get();
+        $skills = App\Level::where('user_id', auth()->id())
+        ->get();
+        $projects = App\Project::where('user_id', auth()->id())
+        ->get();
+        $contributions = App\Contribution::where('user_id', auth()->id())
+        ->get();
+        $degrees = App\Degree::where('user_id', auth()->id())
+        ->get();
+        $hobbies = App\Information::where('user_id', auth()->id())
+        ->get();
+        $image = App\Image::where('user_id', auth()->id())
+        ->get();
+        $information = App\Information::where('user_id', auth()->id())
+        ->get();
+        $hobbies = App\Hobbie::where('user_id', auth()->id())
+        ->get();
+        $companys = App\Company::where('user_id', auth()->id())
+        ->get();
+        $images =  App\Image::where('user_id', auth()->id())
+        ->get();
         if($template == 1){
             $pdf = App::make('dompdf.wrapper');
-            $contact = App\Contact::where('user_id', auth()->id())
-             ->get();
-             $skills = App\Level::where('user_id', auth()->id())
-            ->get();
-            $pdf = \PDF::loadView('templates.download1', compact('contact','skills'));
-            return $pdf->setPaper(array(0, 0, 1000, 3000), 'portrait')->stream();
+            $pdf = \PDF::loadView('templates.donwloads.download1', compact('contact','skills','projects','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->stream('template.pdf');
         }else if($template == 2){
             $pdf = App::make('dompdf.wrapper');
-            $pdf->loadView('templates.template_two');
-            return $pdf->setPaper(array(0, 0, 1000, 2000), 'portrait')->stream('Template.pdf');
+            $pdf = \PDF::loadView('templates.donwloads.download2', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1000, 3000), 'portrait')->stream();
         }else if($template == 3){
             $pdf = App::make('dompdf.wrapper');
             $pdf->loadView('templates.template_three');
             return $pdf->setPaper(array(0, 0, 1000, 2000), 'portrait')->stream();
         }
+    }
+
+    public function save(){
+        $data = $_REQUEST['base64data'];
+        $image = explode('base64', $data);
+        file_put_contents('/background', base64_decode($image[1]));
+            
     }
 }

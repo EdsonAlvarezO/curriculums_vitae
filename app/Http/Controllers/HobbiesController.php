@@ -24,7 +24,7 @@ class HobbiesController extends Controller
         public function destroy($id){
             $hobbie = App\Hobbie::find($id);
             $hobbie->delete();
-            return back();
+            return back()->with('danger', 'Deleted');
             
         }
         public function create(Request $request){
@@ -33,13 +33,13 @@ class HobbiesController extends Controller
             $hobbie->name = $request->name;
             $hobbie->url = $request->url;
             $hobbie->save();
-            return back();
+            return back()->with('status', 'Created');
         }
         public function updating(Request $request, $id){
             $hobbie = App\Hobbie::findOrFail($id);
             $hobbie->name = $request->name;
             $hobbie->url = $request->url;
             $hobbie->save();
-            return back();
+            return back()->with('status', 'Updated');
         }
 }

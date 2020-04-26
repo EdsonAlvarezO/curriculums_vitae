@@ -2,7 +2,17 @@
 
 @section('forms')
 <link href="{{ asset('css/skills.css') }}" rel="stylesheet">
-  <div>
+<div>
+  @if (session('status'))
+            <div class="alert alert-success">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
+        @if (session('danger'))
+            <div class="alert alert-danger">
+                <h3 class="text-center">{{ session('danger') }}</h3>
+            </div>
+        @endif
   </div>
   <div class="container h-100">
 	<div class="d-flex justify-content-center">

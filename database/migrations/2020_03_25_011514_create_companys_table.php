@@ -19,7 +19,8 @@ class CreateCompanysTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('name')->nullable(false);
             $table->string('position')->nullable(false);
-            $table->string('time_period')->nullable(false);
+            $table->string('time_start')->nullable(false);
+            $table->string('time_final')->nullable(false);
             $table->string('description')->nullable(true);
             $table->string('website')->nullable(false);
             $table->timestamps();

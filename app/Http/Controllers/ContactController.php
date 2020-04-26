@@ -24,7 +24,7 @@ class ContactController extends Controller
     public function destroy($id){
         $contact = App\Contact::find($id);
         $contact->delete();
-        return back();
+        return back()->with('danger', 'Deleted');
         
     }
     public function create(Request $request){
@@ -37,7 +37,7 @@ class ContactController extends Controller
         $contact->website = $request->website;
         $contact->github = $request->github;
         $contact->save();
-        return back();
+        return back()->with('status', 'Saved');
     }
     public function updating(Request $request, $id){
         $contact = App\Contact::findOrFail($id);
@@ -48,6 +48,6 @@ class ContactController extends Controller
         $contact->website = $request->website;
         $contact->github = $request->github;
         $contact->save();
-        return back();
+        return back()->with('status', 'Updated');
     }
 }

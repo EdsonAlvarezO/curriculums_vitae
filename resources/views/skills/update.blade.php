@@ -3,6 +3,11 @@
   @section('forms')
 <link href="{{ asset('css/skills.css') }}" rel="stylesheet"> 
 <body>
+@if (session('status'))
+            <div class="alert alert-success">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+@endif
 	<div class="container h-100">
 	<div class="d-flex justify-content-center">
 		<div class="card mt-5 col-md-4 animated bounceInDown myForm">

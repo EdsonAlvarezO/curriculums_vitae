@@ -25,7 +25,7 @@ class InformationControler extends Controller
     public function destroy($id){
         $information = App\Information::find($id);
         $information->delete();
-        return back();
+        return back()->with('danger', 'Deleted');
         
     }
     public function create(Request $request){
@@ -39,7 +39,7 @@ class InformationControler extends Controller
         $information->position_user = $request->position_user;
         $information->location_user = $request->location_user;
         $information->save();
-        return back();
+        return back()->with('status', 'Saved');
     }
     public function updating(Request $request, $id){
         $informationUpdate = App\Information::findOrFail($id);
@@ -51,6 +51,6 @@ class InformationControler extends Controller
         $informationUpdate->position_user = $request->position_user;
         $informationUpdate->location_user = $request->location_user;
         $informationUpdate->save();
-        return back();
+        return back()->with('status', 'Updated');
     }
 }

@@ -3,17 +3,17 @@
 	<head>
 	<link href="{{ public_path('css/template_one.css') }}" rel="stylesheet" type="text/css" />
 	<link href="{{ asset('css/template_one.css') }}" rel="stylesheet">
-
 	</head>
 	<div class="backAndNext">
-		<a class="btn btn-success" href="{{ route('templates')}}" id="btnBack"><i class="fas fa-hand-point-left"></i> Back</a>
 		<a class="btn btn-success " href="{{ route('templates')}}" id="btnBack">Templates</a>
-		<a class="btn btn-success" href="{{ route('template_two')}}" id="btnBack"> Next <i class="fas fa-hand-point-right"></i></a>
+		<a class="btn btn-success" href="{{ route('template_two')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
 	</div>
 	<div id="doc2" class="yui-t7">
+
 		<div id="inner">
 		<div class="sendAndDowload">
-			<form action="" method="post">
+			<form action=" {{route('contact')}}" method="POST">
+					{{ csrf_field() }}
 					<label for="" id="email">Email:</label>
 					<input type="email" id="inputEmail" required ="true">
 					<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
@@ -26,14 +26,26 @@
 			<div id="hd">
 				<div class="yui-gc">
 					<div class="yui-u first">
-						<h1>Jonathan Doe</h1>
-						<h2>Web Designer, Director</h2>
+						@if(sizeof($information) != 0)
+							<h1 id="nameUser">{{$information[0]['name_user']." ".$information[0]['middle_name']." ". $information[0]['last_name'] }}</h1>
+							<h2 id="positionUser">{{$information[0]['position_user']}}</h2>
+							<h2 id="titleI">About</h2>
+							<h3 >Location: {{$information[0]['location_user']}}</h3>
+							<h3 >About me: {{$information[0]['about_you']}}</h3>
+							<h3 >Birth year: {{$information[0]['birth']}}</h3>
+						@endif
 					</div>
 
 					<div class="yui-u">
 						<div class="contact-info">
-							<h3><a href="mailto:name@yourdomain.com">name@yourdomain.com</a></h3>
-							<h3>(313) - 867-5309</h3>
+						<h2>Contact</h2>
+						@if(sizeof($contact) != 0)
+							<h3 >Email: {{$contact[0]['email']}}</h3>
+							<h3 >Telephone number: {{$contact[0]['telephone']}}</h3>
+							<h3>Address: {{$contact[0]['city'] . "," . $contact[0]['street']}}</h3>
+							<h3>GIT: {{$contact[0]['github']}}</h3>
+							<h3>Website: {{$contact[0]['website']}}</h3>
+						@endif
 						</div><!--// .contact-info -->
 					</div>
 				</div><!--// .yui-gc -->
@@ -42,117 +54,93 @@
 			<div id="bd">
 				<div id="yui-main">
 					<div class="yui-b">
-
 						<div class="yui-gf">
-							<div class="yui-u first">
-								<h2>Profile</h2>
-							</div>
+							<h2 id="titleI">Skills</h2>
 							<div class="yui-u">
-								<p class="enlarge">
-									Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
-								</p>
+								@if( sizeof($skills)!= 0)
+								@foreach($skills as $skill)
+										<div class="job">
+											<h2>{{ $skill->name}}</h2>
+											<h4> {{$skill->level}}</h4>
+										</div>
+									@endforeach
+								@endif
 							</div>
 						</div><!--// .yui-gf -->
 
 						<div class="yui-gf">
-							<div class="yui-u first">
-								<h2>Skills</h2>
-							</div>
+								<h2 id="titleI">Experience</h2>
 							<div class="yui-u">
-
-									<div class="talent">
-										<h2>Web Design</h2>
-										<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
-									</div>
-
-									<div class="talent">
-										<h2>Interface Design</h2>
-										<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
-									</div>
-
-									<div class="talent">
-										<h2>Project Direction</h2>
-										<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
-									</div>
-							</div>
-						</div><!--// .yui-gf -->
-
-						<div class="yui-gf">
-							<div class="yui-u first">
-								<h2>Technical</h2>
-							</div>
-							<div class="yui-u">
-								<ul class="talent">
-									<li>XHTML</li>
-									<li>CSS</li>
-									<li class="last">Javascript</li>
-								</ul>
-
-								<ul class="talent">
-									<li>Jquery</li>
-									<li>PHP</li>
-									<li class="last">CVS / Subversion</li>
-								</ul>
-
-								<ul class="talent">
-									<li>OS X</li>
-									<li>Windows XP/Vista</li>
-									<li class="last">Linux</li>
-								</ul>
-							</div>
-						</div><!--// .yui-gf-->
-
-						<div class="yui-gf">
-		
-							<div class="yui-u first">
-								<h2>Experience</h2>
-							</div><!--// .yui-u -->
-
-							<div class="yui-u">
-
-								<div class="job">
-									<h2>Facebook</h2>
-									<h3>Senior Interface Designer</h3>
-									<h4>2005-2007</h4>
-									<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
-								</div>
-
-								<div class="job">
-									<h2>Apple Inc.</h2>
-									<h3>Senior Interface Designer</h3>
-									<h4>2005-2007</h4>
-									<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
-								</div>
-
-								<div class="job">
-									<h2>Microsoft</h2>
-									<h3>Principal and Creative Lead</h3>
-									<h4>2004-2005</h4>
-									<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
-								</div>
-
-
-								<div class="job last">
-									<h2>International Business Machines (IBM)</h2>
-									<h3>Lead Web Designer</h3>
-									<h4>2001-2004</h4>
-									<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
-								</div>
+								@if( sizeof($projects)!= 0)
+									@foreach($projects as $project)
+										<div class="job">
+											<h2>{{ $project->name }}</h2>
+											<h3> {{$project->plataform }}</h3>
+											<h4>{{$project->url}}</h4>
+											<p>{{$project->description}}</p>
+										</div>
+									@endforeach
+								@endif
 
 							</div><!--// .yui-u -->
 						</div><!--// .yui-gf -->
+						<div class="yui-gf">
+								<h2 id="titleI">Companys</h2>
+							<div class="yui-u">
+								@if( sizeof($companys)!= 0)
+									@foreach($companys as $company)
+										<div class="job">
+											<h2>{{ $company->name }}</h2>
+											<h3> {{$company->position }}</h3>
+											<h4>{{$company->time_start. "/".$company->time_final}}</h4>
+											<h3>{{$company->description}}</h3>
+											<h3>{{$company->website}}</h3>
+										</div>
+									@endforeach
+								@endif
 
+							</div><!--// .yui-u -->
+						</div><!--// .yui-gf -->
 
 						<div class="yui-gf last">
-							<div class="yui-u first">
-								<h2>Education</h2>
-							</div>
+								<h2 id="titleI">Education</h2>
 							<div class="yui-u">
-								<h2>Indiana University - Bloomington, Indiana</h2>
-								<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+								@if(sizeof($degrees) != 0)
+									@foreach($degrees as $degree)	
+										<h2>Degree: {{$degree->name}}</h2>
+										<h3>{{$degree->description}} &mdash; <strong>Start:{{$degree->time_final . "  Conclude:" .$degree->time_start}}</strong> </h3>
+										<h3>{{$degree->website}}</h3>
+									@endforeach	
+								@endif
 							</div>
 						</div><!--// .yui-gf -->
-
+						<div class="yui-gf last">
+							<h2 id="titleI">Contributions</h2>
+							<div class="yui-u" id="contributions">
+								@if(sizeof($contributions) != 0)
+									@foreach($contributions as $contribution)	
+									<div id="contri">
+										<h2>Contribution: {{$contribution->name}}</h2>
+										<h3>{{$contribution->description}}</h3>
+										<h3>{{$contribution->url}}</h3>
+									</div>	
+									@endforeach	
+								@endif
+							</div>
+						</div><!--// .yui-gf -->
+						<div class="yui-gf last">
+								<h2 id="titleI">Hobbies</h2>
+							<div class="yui-u" id="contributions">
+								@if(sizeof($hobbies) != 0)
+									@foreach($hobbies as $hobbie)	
+									<div id="contri">
+										<h2>Hobbie: {{$hobbie->name}}</h2>
+										<h3>URL: {{$hobbie->url}}</h3>
+									</div>	
+									@endforeach	
+								@endif
+							</div>
+						</div><!--// .yui-gf -->
 
 					</div><!--// .yui-b -->
 				</div><!--// yui-main -->

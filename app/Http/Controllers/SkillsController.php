@@ -24,7 +24,7 @@ class SkillsController extends Controller
     public function destroy($id){
         $skill = App\Level::find($id);
         $skill->delete();
-        return back();
+        return back()->with('danger', 'Deleted');
         
     }
     public function create(Request $request){
@@ -33,13 +33,13 @@ class SkillsController extends Controller
         $skill->name = $request->name;
         $skill->level = $request->level;
         $skill->save();
-        return back();
+        return back()->with('status', 'Saved');
     }
     public function updating(Request $request, $id){
         $skill = App\Level::findOrFail($id);
         $skill->name = $request->name;
         $skill->level = $request->level;
         $skill->save();
-        return back();
+        return back()->with('status', 'Updated');
     }
 }

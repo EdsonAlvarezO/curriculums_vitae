@@ -40,6 +40,12 @@ Route::put('contributions/editar/{id}', 'ContributionsController@updating')->nam
 Route::get('contributions/destroy/{id}', 'ContributionsController@destroy')->name('contributions.destroy');
 Route::post('contributions/create', 'ContributionsController@create')->name('contributions.create');
 
+Route::get('companys', 'CompanyController@companys')->name('companys');
+Route::get('companys/editar/{id}', 'CompanyController@update')->name('companys.update');
+Route::put('companys/editar/{id}', 'CompanyController@updating')->name('companys.updating');
+Route::get('companys/destroy/{id}', 'CompanyController@destroy')->name('companys.destroy');
+Route::post('companys/create', 'CompanyController@create')->name('companys.create');
+
 Route::get('degrees', 'DegreesController@degrees')->name('degrees');
 Route::get('degrees/editar/{id}', 'DegreesController@update')->name('degrees.update');
 Route::put('degrees/editar/{id}', 'DegreesController@updating')->name('degrees.updating');
@@ -69,3 +75,4 @@ Route::post('images.upload', 'ImagesController@upload')->name('upload');
 Auth::routes();
 
 Route::get('donwload/{template}','pdfController@downloadpdf')->name('descargar');
+Route::post('contact','pdfController@email')->name('contact');

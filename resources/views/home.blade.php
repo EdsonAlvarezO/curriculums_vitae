@@ -9,41 +9,45 @@
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">
                                 <li class="text-center" id="titleMenu">
-                                    <a href="{{ route('personal') }}"> About me
+                                    <a href="{{ route('personal') }}"> 
+                                      About me
                                     </a>
                                 </li>
                                 <li class="text-center">
-                                    <a href="{{ route('contact') }}"> Contact
+                                    
+                                    <a href="{{ route('contact') }}"> 
+                                        Contact
                                     </a>
                                 </li>
                                 <li class="text-center">
+                                
                                     <a href="{{ route('projects') }}">
-                                     Projects
+                                         Projects
                                     </a>
                                 </li>
                                 <li class="text-center">
                                     <a href="{{ route('contributions') }}">
-                                        <i class="fa fa-dashboard fa-lg"></i> Contributions
+                                        Contributions
                                     </a>
                                 </li>
                                 <li class="text-center">
                                     <a href="{{ route('degrees') }}">
-                                        <i class="fa fa-dashboard fa-lg"></i> Education
+                                        Education
                                     </a>
                                 </li>
                                 <li class="text-center">
                                     <a href="{{ route('hobbies') }}">
-                                        <i class="fa fa-dashboard fa-lg"></i> Hobbies
+                                         Hobbies
                                     </a>
                                 </li>
                                 <li class="text-center">
                                     <a href="{{ route('skills') }}">
-                                        <i class="fa fa-dashboard fa-lg"></i> Skills
+                                         Skills
                                     </a>
                                 </li>
                                 <li class="text-center">
-                                    <a href="{{ route('personal') }}">
-                                        <i class="fa fa-dashboard fa-lg"></i> Experience
+                                    <a href="{{ route('companys') }}">
+                                         Experience
                                     </a>
                                 </li>
                             </ul>

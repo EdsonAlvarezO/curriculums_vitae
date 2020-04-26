@@ -24,7 +24,7 @@ class ContributionsController extends Controller
     public function destroy($id){
         $contribution = App\Contribution::find($id);
         $contribution->delete();
-        return back();
+        return back()->with('danger', 'Deleted');
         
     }
     public function create(Request $request){
@@ -34,7 +34,7 @@ class ContributionsController extends Controller
         $contribution->description = $request->description;
         $contribution->url = $request->url;
         $contribution->save();
-        return back();
+        return back()->with('status', 'Saved');
     }
     public function updating(Request $request, $id){
         $contribution = App\Contribution::findOrFail($id);
@@ -42,6 +42,6 @@ class ContributionsController extends Controller
         $contribution->description = $request->description;
         $contribution->url = $request->url;
         $contribution->save();
-        return back();
+        return back()->with('status', 'Updated');
     }
 }

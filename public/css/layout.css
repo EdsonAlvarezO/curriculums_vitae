@@ -41,6 +41,7 @@ html, body{
 .myconteiner{
 margin-left: 10%;
 margin-right: 0%;
+max-width: 1621px;
 }
 .btn-default {
     border-color: #B07296;

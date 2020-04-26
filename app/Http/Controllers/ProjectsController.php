@@ -22,7 +22,7 @@ class ProjectsController extends Controller
     public function destroy($id){
         $project = App\Project::find($id);
         $project->delete();
-        return back();
+        return back()->with('danger', 'Deleted');
         
     }
     public function create(Request $request){
@@ -33,7 +33,7 @@ class ProjectsController extends Controller
         $project->description = $request->description;
         $project->url = $request->url;
         $project->save();
-        return back();
+        return back()->with('status', 'Saved');
     }
     public function updating(Request $request, $id){
         $project = App\Project::findOrFail($id);
@@ -42,6 +42,6 @@ class ProjectsController extends Controller
         $project->description = $request->description;
         $project->url = $request->url;
         $project->save();
-        return back();
+        return back()->with('status', 'Updated');
     }
 }

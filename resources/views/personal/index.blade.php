@@ -1,6 +1,18 @@
 @extends('home')
 @section('forms')
 <link href="{{ asset('css/personal.css') }}" rel="stylesheet">
+<div>
+  @if (session('status'))
+            <div class="alert alert-success">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
+        @if (session('danger'))
+            <div class="alert alert-danger">
+                <h3 class="text-center">{{ session('danger') }}</h3>
+            </div>
+        @endif
+  </div>
   @if(sizeof($informations) != 0 )
   @foreach($informations as $data)
   

@@ -24,7 +24,7 @@ class DegreesController extends Controller
         public function destroy($id){
             $degrees = App\Degree::find($id);
             $degrees->delete();
-            return back();
+            return back()->with('danger', 'Deleted');
             
         }
         public function create(Request $request){
@@ -36,7 +36,7 @@ class DegreesController extends Controller
             $degree->time_final =  $request->time_final;
             $degree->website = $request->website;
             $degree->save();
-            return back();
+            return back()->with('status', 'Saved');
         }
         public function updating(Request $request, $id){
             $degree = App\Degree::findOrFail($id);
@@ -46,6 +46,6 @@ class DegreesController extends Controller
             $degree->time_final =  $request->time_final;
             $degree->website = $request->website;
             $degree->save();
-            return back();
+            return back()->with('status', 'Updated');
         }
 }

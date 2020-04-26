@@ -1,3 +1,6 @@
+<video autoplay muted loop id="myVideo">
+  <source src="../background/login.mov" type="video/mp4">
+</video>
 @extends('layouts.app')
 @section('content')
 <link href="{{ asset('css/login.css') }}" rel="stylesheet">

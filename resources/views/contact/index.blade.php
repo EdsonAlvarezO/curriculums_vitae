@@ -2,7 +2,17 @@
 
 @section('forms')
 <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
-  @if(sizeof($contact) != 0 )
+@if (session('status'))
+            <div class="alert alert-success">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
+        @if (session('danger'))
+            <div class="alert alert-danger">
+                <h3 class="text-center">{{ session('danger') }}</h3>
+            </div>
+        @endif
+@if(sizeof($contact) != 0 )
   <table class="table">
     <thead class="thead-dark">
       <tr>

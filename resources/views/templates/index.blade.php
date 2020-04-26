@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="card">
-            <img class="card-img-top img-fluid" src="templatesIMG/template_one.png" alt="Card image cap">
+            <img class="card-img-top img-fluid" id="img2" src="templatesIMG/template_one.png" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title text-center" id="templateNumber">Template One</h4>
                     <div class="btnView">

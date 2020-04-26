@@ -12,7 +12,7 @@ class ImagesController extends Controller
     }
     public function index(){
         $images =  App\Image::where('user_id', auth()->id())
-        ->get();;
+        ->get();
         return view('image.index',compact('images'));
     }
     public function upload(Request $request){

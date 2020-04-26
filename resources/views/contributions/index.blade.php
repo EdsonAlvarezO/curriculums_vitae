@@ -2,6 +2,18 @@
 
 @section('forms')
 <link href="{{ asset('css/contribution.css') }}" rel="stylesheet">
+<div>
+  @if (session('status'))
+            <div class="alert alert-success">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
+        @if (session('danger'))
+            <div class="alert alert-danger">
+                <h3 class="text-center">{{ session('danger') }}</h3>
+            </div>
+        @endif
+  </div>
   <div>
   </div>
   <div class="container h-100">
