@@ -1,0 +1,109 @@
+.backAndNext{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#btnBack{
+    width: 87px;
+    height: 40px;
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+#btnAllTemplates{
+    width: 100px;
+    height: 40px;
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.sendAndDowload {
+    display: flex;
+    justify-content: center;
+}
+#sendAndDownload{
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    margin-left: 4px;
+}
+.info{
+    column-count: 2;
+}
+.myContainerF {
+    width: 72%;
+    background-color: #008000cc;
+    margin-left: 18%;
+}
+div#infoContact {
+    text-align: center;
+    color: rgb(24, 56, 11);
+}
+div#info {
+    padding-top: 72px;
+    padding-bottom: 21px;
+}
+.inContac {
+    padding-bottom: 22px;
+    border-bottom: 5px solid #2f4e4f;
+    width: 55%;
+    margin-left: 23%;
+}
+p.tel {
+    font-size: 23px;
+}
+h1.fn {
+    border-bottom: 5px solid darkslategrey;
+    width: 50%;
+    margin-left: 246px;
+}
+h1.fnP {
+    border-bottom: 5px solid darkslategrey;
+    width: 90%;
+    margin-left: 30px;
+}
+div#education {
+    margin-left: 405px;
+    padding-top: 20px;
+    background-color: #3c633561;
+    width: 55%;
+    margin-top: 16px;
+    border-radius: 15px;
+}
+div#educationP {
+    margin-left: 260px;
+    padding-top: 20px;
+    background-color: #3c633561;
+    width: 60%;
+    margin-top: 16px;
+    border-radius: 15px;
+}
+h2#education {
+    padding-left: 29px;
+    border-bottom: 5px solid #304d4f;
+    width: 400px;
+}
+div#asda {
+    margin-left: 218px;
+    /* width: 603px; */
+    padding-bottom: 10px;
+    
+}
+div#asdaP {
+    margin-left: 150px;
+    /* width: 603px; */
+    padding-bottom: 10px;
+    
+}

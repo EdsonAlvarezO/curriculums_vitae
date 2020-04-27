@@ -74,6 +74,7 @@ Route::get('templates', 'TemplatesController@index')->name('templates');
 Route::get('templates/template_one', 'TemplatesController@template_one')->name('template_one');
 Route::get('templates/template_two', 'TemplatesController@template_two')->name('template_two');
 Route::get('templates/template_four', 'TemplatesController@template_four')->name('template_four');
+Route::get('templates/template_five', 'TemplatesController@template_five')->name('template_five');
 
 Route::post('images.upload', 'ImagesController@upload')->name('upload');
 Auth::routes();

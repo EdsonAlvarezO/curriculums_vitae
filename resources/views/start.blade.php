@@ -30,7 +30,7 @@
             <div class="col-sm-8">
               <h2 class="animated bounceInLeft" id="titleFour">Pdf CV Templates</h2>
               <h2 class="animated bounceInLeft" id="titleFour">Build To Stand Out
-                Within our online CV builder, candidates can choose among different designs to create their PDF CV version
+                Within our online CV builder, users can choose among different designs to create their PDF CV version
               </h2>
               <div id="registerA">
                   <a href="{{route('personal')}}" class="animated pulse" id="registerCV">Build your CV now</a>

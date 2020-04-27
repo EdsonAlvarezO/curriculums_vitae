@@ -69,9 +69,9 @@
                                     <div id="asda">
                                         <h2>Project: {{ $project->name }}</h2>
                                         <ul>
-                                            <li>Website: {{$project->url}}</li>
-                                            <li>Plataform: {{$project->plataform }}</li>
-                                            <li>Description: {{$project->description}}</li>
+                                            <h5>Website: {{$project->url}}</h5>
+                                            <h5>Plataform: {{$project->plataform }}</h5>
+                                            <h5>Description: {{$project->description}}</h5>
                                         </ul>
                                     </div>
                                 @endforeach
@@ -91,6 +91,39 @@
                             @endif
                         </div>
                 </div>
+                <div id="skills">
+                    <h2 id="up">Companys</h2>
+                        <div id="inSkills">
+                            @if( sizeof($companys)!= 0)
+                                @foreach($companys as $company)
+                                    <div id="asda">
+                                    <h2>{{ $company->name }}</h2>
+                                        <h3> {{$company->position }}</h3>
+                                        <h4>{{$company->time_start. "/".$company->time_final}}</h4>
+                                        <h3>{{$company->description}}</h3>
+                                        <h3>{{$company->website}}</h3>
+                                    </div>
+                                @endforeach
+                            @endif
+                        </div>
+                </div>
+                <div id="skills">
+                    <h2 id="up">Contributions</h2>
+                        <div id="inSkills">
+                            @if(sizeof($contributions) != 0)
+                                @foreach($contributions as $contribution)
+                                    <div id="asda">
+                                        <h2>Contribution: {{$contribution->name}}</h2>
+                                        <h3>{{$contribution->description}}</h3>
+                                        <h3>{{$contribution->url}}</h3>
+                                    </div>
+                                @endforeach
+                            @endif
+                        </div>
+                </div>
+            </div>
+            <div id="fin">
+                
             </div>
     </div>
 </div>

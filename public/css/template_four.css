@@ -116,7 +116,14 @@ div#asda {
     background-color: #59395d42;
     width: 98%;
     margin-left: 27px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #170e18;
 }
 h2#up {
     border-bottom: 5px solid #692a6b;
+}
+div#fin {
+    color: #fff;
+    height: 66px;
+    text-align: center;
 }

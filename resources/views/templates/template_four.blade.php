@@ -9,7 +9,7 @@
         <div class="backAndNext">
             <a class="btn btn-success" href="{{ route('template_three')}}" id="btnBack"><i class="fas fa-hand-point-left"></i></a>
             <a class="btn btn-success " href="{{ route('templates')}}" id="btnAllTemplates">Templates</a>
-            <a class="btn btn-success" href="{{ route('template_three')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
+            <a class="btn btn-success" href="{{ route('template_five')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
         </div>
 
         <div id="all">
@@ -108,6 +108,39 @@
                                 @endif
                             </div>
                     </div>
+                    <div id="skills">
+                        <h2 id="up">Companys</h2>
+                            <div id="inSkills">
+                                @if( sizeof($companys)!= 0)
+									@foreach($companys as $company)
+                                        <div id="asda">
+                                        <h2>{{ $company->name }}</h2>
+											<h3> {{$company->position }}</h3>
+											<h4>{{$company->time_start. "/".$company->time_final}}</h4>
+											<h3>{{$company->description}}</h3>
+											<h3>{{$company->website}}</h3>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                    </div>
+                    <div id="skills">
+                        <h2 id="up">Contributions</h2>
+                            <div id="inSkills">
+                                @if(sizeof($contributions) != 0)
+									@foreach($contributions as $contribution)
+                                        <div id="asda">
+                                            <h2>Contribution: {{$contribution->name}}</h2>
+                                            <h3>{{$contribution->description}}</h3>
+                                            <h3>{{$contribution->url}}</h3>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                    </div>
+                </div>
+                <div id="fin">
+                    
                 </div>
         </div>
     </div>
