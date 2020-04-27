@@ -27,7 +27,7 @@ html,body{
     position: fixed;
     top: 0px;
     width: 16%;
-    height: 65%;
+    height: 58%;
     color: #e1ffff;
     margin-top: 154px;
     border-color: #fff;
@@ -102,7 +102,9 @@ vertical-align: middle;
 padding-left: 0px;
 background-color: #191f22;
 margin-bottom: 20px;
-
+    border-color: #000;
+    border-width: 1px;
+    border-style: groove;
 }
 .nav-side-menu li a {
 text-decoration: none;

@@ -179,6 +179,7 @@ a#pdf:hover {
 }
 #nameUser{
     color: black;
+    text-align: center;
 }
 .title {
     font-family: cursive;
@@ -202,5 +203,8 @@ a#pdf:hover {
     font-size: 20px;
 }
 h2#positionUser {
+    text-align: center;
+}
+#variables{
     text-align: center;
 }

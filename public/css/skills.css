@@ -4,7 +4,7 @@ html,body{
     background: rgb(2,0,36);
    /*background-image: url("../background/bc.png");*/
    /*background-image: linear-gradient(to right top, #e4e9f0, #d9dde4, #ced1d8, #c3c6cc, #b8bac0);*/
-   background-color: #fff;
+   background-color: black;
 }
 .myForm{
   background-color:white;
@@ -25,7 +25,15 @@ box-shadow:none !important;
 border:1px solid #ccc !important;
 
 }
-
+.myFormP{
+  background-color:white;
+  padding: 15px !important;
+  border-radius: 15px !important;
+  color: black;
+  border-color: black;
+  width: 100%;
+  margin-top: 230px;;
+}
 .br-15{
 border-radius: 15px 0 0 15px !important;
 }
@@ -54,6 +62,7 @@ color: black;
     height: 360px;
     background-color: #fff;
     border-radius: 5px;
+    margin-right: 44px;
 }
 #myF{
 width: 90%;  

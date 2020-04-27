@@ -67,16 +67,7 @@
             font-size: 20px;
         }
  div#asda {
-            /* border-left: 1px solid; */
-            /* font-style: italic; */
-            /* font-weight: bold; */
-            /* font-size: 18px; */
-            text-align: -webkit-center;
-            padding: 0 26px 0 0;
-            /* width: 150px; */
-            /* float: left; */
-            /* height: 161px; */
-            border-left: 1px solid #999;
+           font-family: cursive;
         }
         #nameSkill{
             color: black;

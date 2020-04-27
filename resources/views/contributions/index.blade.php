@@ -4,12 +4,12 @@
 <link href="{{ asset('css/contribution.css') }}" rel="stylesheet">
 <div>
   @if (session('status'))
-            <div class="alert alert-success">
+            <div class="alert alert-success animated bounceInDown">
             <h3 class="text-center">{{ session('status') }}</h3>
             </div>
         @endif
         @if (session('danger'))
-            <div class="alert alert-danger">
+            <div class="alert alert-danger animated bounceInDown">
                 <h3 class="text-center">{{ session('danger') }}</h3>
             </div>
         @endif

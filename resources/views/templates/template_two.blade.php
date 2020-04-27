@@ -25,7 +25,7 @@
 
          @if(sizeof($images) != 0)
             @foreach($images as $img)
-                <img src="{{url('/images_user/$img->url')}}" alt="Image" id="pic"/>
+                <img src="/images_user/{{$img->url}}" alt="Image" id="pic"/>
             @endforeach
         @endif
         <div id="contact-info" class="vcard">

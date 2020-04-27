@@ -1,29 +1,11 @@
-@extends('layouts.app')
-@section('content')
-	<head>
-	<link href="{{ public_path('css/template_three.css') }}" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('css/template_three.css') }}" rel="stylesheet">
-    </head>
-    <div class="backAndNext">
-		<a class="btn btn-success" href="{{ route('template_two')}}" id="btnBack"><i class="fas fa-hand-point-left"></i></a>
-		<a class="btn btn-success " href="{{ route('templates')}}" id="btnAllTemplates">Templates</a>
-		<a class="btn btn-success" href="{{ route('template_four')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
-</div>
-	<div id="doc2" class="yui-t7">
+<head>
+    <link href="{{ public_path('css/template_three.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/template_three.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<div id="doc2" class="yui-t7">
 
 		<div id="inner">
-		<div class="sendAndDowload">
-			<form action=" {{route('contact')}}" method="POST">
-					{{ csrf_field() }}
-					<label for="" id="email">Email:</label>
-					<input type="email" id="inputEmail" required ="true">
-					<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
-			</form>
-			<form action="{{ route('descargar', 3)}}">
-				<button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
-			</form>
-		</div>
-
 			<div id="hd">
 				<div class="yui-gc">
 					<div class="yui-u first">
@@ -49,7 +31,7 @@
 						@endif
 						@if(sizeof($images) != 0)
 							@foreach($images as $img)
-								<img src="/images_user/{{$img->url}}" alt="Image" id="pic"/>
+								<img src="./images_user/{{$img->url}}" alt="Image" id="pic2"/>
 							@endforeach
 						@endif
 						</div><!--// .contact-info -->
@@ -160,8 +142,3 @@
 
 
 	</div><!--// doc -->
-
-
-	</body>
-@endsection
-

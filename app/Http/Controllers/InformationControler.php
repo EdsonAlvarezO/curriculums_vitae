@@ -13,14 +13,16 @@ class InformationControler extends Controller
 }
     public function personal(){
         $informations = App\Information::where('user_id', auth()->id())
-        ->get();;
+        ->get();
         $images =  App\Image::where('user_id', auth()->id())
         ->get();
         return view('personal.index',compact('informations','images'));
     }
     public function update($id){
         $information = App\Information::findOrFail($id);
-        return view('personal.update',compact('information'));
+        $images =  App\Image::where('user_id', auth()->id())
+        ->get();
+        return view('personal.update',compact('information','images'));
     }
     public function destroy($id){
         $information = App\Information::find($id);

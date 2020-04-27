@@ -57,3 +57,12 @@ nav.navbar.navbar-expand.navbar-dark.bg-dark.shadow-sm {
     border-right: 0;
     border-color: blueviolet;
 }
+.myFormP{
+    background-color:white;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    color: black;
+    border-color: black;
+    width: 100%;
+    margin-top: 120px;;
+}

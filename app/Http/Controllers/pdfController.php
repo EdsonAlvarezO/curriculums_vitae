@@ -34,15 +34,19 @@ class pdfController extends Controller
         if($template == 1){
             $pdf = App::make('dompdf.wrapper');
             $pdf = \PDF::loadView('templates.donwloads.download1', compact('contact','skills','projects','companys','contributions','degrees','hobbies','image','information'));
-            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->stream('template.pdf');
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
         }else if($template == 2){
             $pdf = App::make('dompdf.wrapper');
             $pdf = \PDF::loadView('templates.donwloads.download2', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
-            return $pdf->setPaper(array(0, 0, 1000, 3000), 'portrait')->stream();
+            return $pdf->setPaper(array(0, 0, 1000, 3000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
         }else if($template == 3){
             $pdf = App::make('dompdf.wrapper');
-            $pdf->loadView('templates.template_three');
-            return $pdf->setPaper(array(0, 0, 1000, 2000), 'portrait')->stream();
+            $pdf = \PDF::loadView('templates.donwloads.download3', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
+        }else if($template == 4){
+            $pdf = App::make('dompdf.wrapper');
+            $pdf = \PDF::loadView('templates.donwloads.download4', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
         }
     }
 

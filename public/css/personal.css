@@ -2,7 +2,7 @@ html,body{
     height: 100%;
     margin: 0;
     background: rgb(2,0,36);
-    background-color: #fff;
+    background-color: black;
 
 }
 .myForm{
@@ -72,8 +72,7 @@ color:#fff;
 background-color:black;
 }
 h5.card-title.text-center {
-    background-color: #fff;
-    color: black;
+    color: #d3bfcd;
     font-stretch: initial;
     font-style: italic;
     font-family: fantasy;
@@ -82,11 +81,13 @@ h5.card-title.text-center {
 div#nm {
     display: flex;
     justify-content: center;
+    margin-top: 19px;
 }
 .body{
-    width: 700px;
-    background-color: black;
+    width: 1093px;
+    background-color: #191f22;
     color: #fff;
+    border-radius: 32px;
 }
 #myInfo {
     margin-left: 30%;
@@ -111,7 +112,7 @@ img#imageProfile {
     height: 333px;
 }
 button#fakebtn {
-    margin-left: 137%;
+    margin-left: 401%;
     margin-top: 15%;
 }   
 p#namefile {
@@ -119,3 +120,47 @@ p#namefile {
     margin-left: 90%;
     
 } 
+#myInfoP {
+    margin-left: 16%;
+    background-color: #fff;
+    margin-top: 10%;
+    border: 0;
+    width: 60%;
+}
+.d-flex.justify-content-center {
+    margin-top: 130px;
+}
+.myFormP{
+    background-color:white;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    color: black;
+    border-color: black;
+    width: 100%;
+    margin-top: 5px;;
+}
+    img#imgS {
+        height: 320px;
+        margin-left: 317px;
+        margin-right: 0px;
+        width: 360px;
+    
+}
+.circle-table {
+    padding: 5px 22px !important;
+    border-radius: 5px;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+div#imagen {
+    width: 15%;
+}

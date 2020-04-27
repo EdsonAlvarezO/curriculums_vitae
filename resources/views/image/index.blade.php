@@ -11,7 +11,11 @@
 			<h1 class="white">Image Profile Upload</h1>
 		</div>
 	</div>
-	
+	@if (session('status'))
+            <div class="alert alert-danger animated bounceInDown">
+              <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+    @endif
 	<form files = "true" name="upload" action="{{route('upload')}} " method="post" enctype="multipart/form-data">
 		@csrf
 		<div class="row">
@@ -19,7 +23,7 @@
 				<div class="btn-container">
 				@if(sizeof($images) != 0)
 					@foreach($images as $img)
-						<img id= "imageProfile" src="images_user/{{$img->url}}" alt="">
+						<img id= "imageProfile" src="./images_user/{{$img->url}}" alt="">
 					@endforeach
 				@endif
 					<h1 class="imgupload"></h1>

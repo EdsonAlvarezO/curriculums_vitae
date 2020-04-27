@@ -4,6 +4,7 @@ html, body{
 .row {
     display: flex;
     flex-wrap: wrap;
+    height: 80%;
  }
  
  .row > div[class*='col-'] {
@@ -34,7 +35,7 @@ html, body{
      font-style: oblique;
  }
  img#img2 {
-    height: 81%;
+    height: 82%;
 }
 #t4 {
     height: 81%;

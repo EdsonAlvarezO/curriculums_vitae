@@ -4,13 +4,13 @@
 <link href="{{ asset('css/contribution.css') }}" rel="stylesheet"> 
 <body>
 @if (session('status'))
-            <div class="alert alert-success">
+            <div class="alert alert-success animated bounceInDown">
             <h3 class="text-center">{{ session('status') }}</h3>
             </div>
 @endif
 	<div class="container h-100">
 	<div class="d-flex justify-content-center">
-		<div class="card mt-5 col-md-4 animated bounceInDown myForm">
+		<div class="card  animated bounceInDown myFormP">
 			<div class="card-header text-center">
 				<h4>Contribution Update</h4>
 			</div>

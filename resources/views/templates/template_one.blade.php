@@ -30,9 +30,9 @@
 							<h1 id="nameUser">{{$information[0]['name_user']." ".$information[0]['middle_name']." ". $information[0]['last_name'] }}</h1>
 							<h2 id="positionUser">{{$information[0]['position_user']}}</h2>
 							<h2 id="titleI">About</h2>
-							<h3 >Location: {{$information[0]['location_user']}}</h3>
-							<h3 >About me: {{$information[0]['about_you']}}</h3>
-							<h3 >Birth year: {{$information[0]['birth']}}</h3>
+							<h3 id="variables">Location: {{$information[0]['location_user']}}</h3>
+							<h3 id="variables">About me: {{$information[0]['about_you']}}</h3>
+							<h3 id="variables">Birth year: {{$information[0]['birth']}}</h3>
 						@endif
 					</div>
 
@@ -40,11 +40,11 @@
 						<div class="contact-info">
 						<h2>Contact</h2>
 						@if(sizeof($contact) != 0)
-							<h3 >Email: {{$contact[0]['email']}}</h3>
-							<h3 >Telephone number: {{$contact[0]['telephone']}}</h3>
-							<h3>Address: {{$contact[0]['city'] . "," . $contact[0]['street']}}</h3>
-							<h3>GIT: {{$contact[0]['github']}}</h3>
-							<h3>Website: {{$contact[0]['website']}}</h3>
+							<h3 id="variables">Email: {{$contact[0]['email']}}</h3>
+							<h3 id="variables" >Telephone number: {{$contact[0]['telephone']}}</h3>
+							<h3 id="variables">Address: {{$contact[0]['city'] . "," . $contact[0]['street']}}</h3>
+							<h3 id="variables">GIT: {{$contact[0]['github']}}</h3>
+							<h3 id="variables">Website: {{$contact[0]['website']}}</h3>
 						@endif
 						</div><!--// .contact-info -->
 					</div>

@@ -1,0 +1,122 @@
+.backAndNext{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#btnBack{
+    width: 87px;
+    height: 40px;
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+#btnAllTemplates{
+    width: 100px;
+    height: 40px;
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+img#pic {
+    width: 349px;
+    margin-top: 15px;
+    border-radius: 20px;
+    margin-left: 40%;
+}
+img#pic2 {
+    width: 349px;
+    margin-top: 15px;
+    border-radius: 20px;
+    margin-left: 37%;
+}
+div#all {
+    margin-top: 102px;
+}
+.myContainerF{
+    background-color: black;
+    width: 83%;
+    margin-left: 12%;
+}
+.fn{
+    font-size: 53px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+.tel{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+#position{
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+.about{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.col-4.inforP {
+    background-color: blueviolet;
+}
+.sendAndDowload {
+    display: flex;
+    justify-content: center;
+}
+#sendAndDownload{
+    background-color: #191f22;
+    color: #d3bfcd;
+    border-color: #191f22;
+    margin-left: 4px;
+}
+div#info {
+    background-color: #170e18;
+    border-bottom: 5px solid black;
+    border-left: 15px solid black;
+    border-top: 15px solid black;
+    border-right: 15px solid black;
+}
+#education {
+    margin-left: 14%;
+    color: #fff;
+    margin-top: 15px;
+}
+div#inEducation {
+    margin-left: -18%;
+}
+#skills{
+    margin-left: 14%;
+    color: #fff;
+    margin-top: 15px;
+}
+div#inSkills {
+    margin-left: -18%;
+}
+div#asda {
+    /* align-items: center; */
+    text-align: center;
+    background-color: #59395d42;
+    width: 98%;
+    margin-left: 27px;
+}
+h2#up {
+    border-bottom: 5px solid #692a6b;
+}

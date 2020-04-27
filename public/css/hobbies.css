@@ -4,7 +4,7 @@ html,body{
     background: rgb(2,0,36);
    /*background-image: url("../background/bc.png");*/
    /*background-image: linear-gradient(to right top, #e4e9f0, #d9dde4, #ced1d8, #c3c6cc, #b8bac0);*/
-   background-color: #fff;
+   background-color: black;
 }
 .myForm{
     background-color:white;
@@ -162,4 +162,13 @@ tbody {
 .circle-table {
     padding: 5px 22px !important;
     border-radius: 5px;
+}
+.myFormP{
+    background-color:white;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    color: black;
+    border-color: black;
+    width: 100%;
+    margin-top: 216px;;
 }
