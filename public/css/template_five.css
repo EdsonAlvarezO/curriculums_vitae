@@ -45,8 +45,12 @@
 .myContainerF {
     width: 72%;
     background-color: #008000cc;
-    margin-left: 18%;
+    margin-left: 16%;
     border-radius: 40px;
+    
+}
+.myContainerP {
+    background-color: #008000cc;
     
 }
 div#infoContact {
@@ -88,7 +92,7 @@ div#education {
     border-radius: 15px;
 }
 div#educationP {
-    margin-left: 260px;
+    margin-left: 341px;
     padding-top: 20px;
     background-color: #3c633561;
     width: 60%;

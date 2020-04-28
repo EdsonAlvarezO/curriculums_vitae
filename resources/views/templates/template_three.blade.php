@@ -14,8 +14,7 @@
             <div class="alert alert-success animated bounceInDown">
             <h3 class="text-center">{{ session('status') }}</h3>
             </div>
-        @endif
-		<div id="inner">
+		@endif
 		<div class="sendAndDowload">
 			<form action=" {{route('send-email', 3)}}" method="POST">
 					{{ csrf_field() }}
@@ -27,7 +26,7 @@
 				<button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
 			</form>
 		</div>
-
+		<div id="inner">
 			<div id="hd">
 				<div class="yui-gc">
 					<div class="yui-u first">
@@ -173,4 +172,11 @@
 
 	</body>
 @endsection
-
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".alert").fadeOut(1500);
+    },3000);
+});
+</script>

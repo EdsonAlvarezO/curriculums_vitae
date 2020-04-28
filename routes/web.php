@@ -76,6 +76,8 @@ Route::get('templates/template_two', 'TemplatesController@template_two')->name('
 Route::get('templates/template_four', 'TemplatesController@template_four')->name('template_four');
 Route::get('templates/template_five', 'TemplatesController@template_five')->name('template_five');
 Route::get('templates/template_six', 'TemplatesController@template_six')->name('template_six');
+Route::get('templates/template_seven', 'TemplatesController@template_seven')->name('template_seven');
+Route::get('templates/template_eigth', 'TemplatesController@template_eigth')->name('template_eigth');
 
 Route::post('images.upload', 'ImagesController@upload')->name('upload');
 Auth::routes();

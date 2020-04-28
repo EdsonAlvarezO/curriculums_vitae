@@ -47,7 +47,10 @@ div#all {
 .myContainerF{
     background-color: black;
     width: 83%;
-    margin-left: 12%;
+    margin-left: 9%;
+}
+.myContainerP{
+    background-color: black;
 }
 .fn{
     font-size: 53px;

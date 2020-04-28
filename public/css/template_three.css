@@ -163,6 +163,7 @@ a#pdf:hover {
 }
 #email{
  font-size: 21px;
+ color: black;
 }
 #inputEmail{
  height: 35px;
@@ -227,10 +228,12 @@ p{
 img#pic2 {
   height: 202px;
   margin-left: 270px;
+  border-radius: 104px;
 }
 img#pic{
   height: 202px;
   margin-left: 277px;
+  border-radius: 104px;
 }
 div#iP {
   border-bottom: 5px solid;

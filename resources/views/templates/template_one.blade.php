@@ -151,7 +151,6 @@
 			</div><!--// bd -->
 
 			<div id="ft">
-				<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
 			</div><!--// footer -->
 
 		</div><!-- // inner -->
@@ -162,4 +161,11 @@
 
 	</body>
 @endsection
-
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".alert").fadeOut(1500);
+    },3000);
+});
+</script>

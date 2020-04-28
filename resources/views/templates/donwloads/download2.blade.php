@@ -4,7 +4,6 @@
 </head>
 <body>
     <div id="page-wrap">
-
          @if(sizeof($images) != 0)
             @foreach($images as $img)
                 <img src="./images_user/{{$img->url}}" alt="Image" id="pic"/>

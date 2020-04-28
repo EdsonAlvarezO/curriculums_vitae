@@ -10,7 +10,7 @@
                 <div id="info">
                     @if(sizeof($images) != 0)
                         @foreach($images as $img)
-                            <img src="./images_user/{{$img->url}}" alt="Image" id="pic"/>
+                            <img src="./images_user/{{$img->url}}" alt="Image" id="pic2"/>
                         @endforeach
                     @endif
                     @if(sizeof($information) != 0)

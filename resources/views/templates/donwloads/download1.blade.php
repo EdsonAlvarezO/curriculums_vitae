@@ -7,18 +7,6 @@
 <div id="doc2" class="yui-t7">
 
 		<div id="inner">
-		<div class="sendAndDowload">
-			<form action=" {{route('contact')}}" method="POST">
-					{{ csrf_field() }}
-					<label for="" id="email">Email:</label>
-					<input type="email" id="inputEmail" required ="true">
-					<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
-			</form>
-			<form action="{{ route('descargar', 1)}}">
-				<button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
-			</form>
-		</div>
-
 			<div id="hd">
 				<div class="yui-gc">
 					<div class="yui-u first">
@@ -143,7 +131,6 @@
 			</div><!--// bd -->
 
 			<div id="ft">
-				<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
 			</div><!--// footer -->
 
 		</div><!-- // inner -->

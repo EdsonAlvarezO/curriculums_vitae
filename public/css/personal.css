@@ -2,16 +2,16 @@ html,body{
     height: 100%;
     margin: 0;
     background: rgb(2,0,36);
-    background-color: black;
+    background-color: #fff;
 
 }
-.myForm{
-    background-color:white;
+.myForm {
+    background-color: #191f22;
     padding: 15px !important;
     border-radius: 15px !important;
-    color: black;
+    color: #fefefe;
     border-color: black;
- }
+}
 
 input{
     border-radius:0 15px 15px 0 !important;
@@ -128,7 +128,7 @@ p#namefile {
     width: 60%;
 }
 .d-flex.justify-content-center {
-    margin-top: 130px;
+    margin-top: 110px;
 }
 .myFormP {
     background-color: #191f22;

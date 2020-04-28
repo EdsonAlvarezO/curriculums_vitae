@@ -39,7 +39,7 @@ img#pic2 {
     width: 350px;
     margin-top: 15px;
     border-radius: 20px;
-    margin-left: 40%;
+    margin-left: 67%;
 }
 div#all {
     margin-top: 102px;
@@ -47,7 +47,10 @@ div#all {
 .myContainerF{
     background-color: black;
     width: 83%;
-    margin-left: 12%;
+    margin-left: 8%;
+}
+.myContainerP{
+    background-color: black;
 }
 .fn{
     font-size: 53px;
@@ -59,7 +62,7 @@ div#all {
 
 .tel {
     font-size: 22px;
-    color: #6daf91;
+    color: #f3f3f3;
     margin-top: 10px;
     text-align: left;
     width: 51%;
@@ -92,7 +95,7 @@ div#all {
     margin-left: 4px;
 }
 div#info {
-    background-color: #0b47f136;
+    background-color: black;
     border-bottom: 5px solid black;
     border-left: 15px solid black;
     border-top: 15px solid black;
@@ -128,7 +131,7 @@ div#asdaP {
     text-align: center;
     background-color: #4faa91;
     width: 52%;
-    margin-left: 400px;
+    margin-left: 484px;
     margin-bottom: 10px;
     border-bottom: 5px solid #66af90;
 }

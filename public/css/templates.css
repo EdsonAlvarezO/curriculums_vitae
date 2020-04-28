@@ -4,7 +4,7 @@ html, body{
 .row {
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
+    height: 88%;
  }
  
  .row > div[class*='col-'] {

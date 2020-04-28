@@ -63,7 +63,7 @@ class MailSend extends Controller
         
         $data["email"]=$request->email;
         $data["client_name"]="client_name";
-        $data["subject"]="subject";
+        $data["subject"]="Curriculum Vitae";
 
         //$pdf = PDF::loadView('mails.mail', $data);
 
