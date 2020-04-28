@@ -57,6 +57,16 @@ class pdfController extends Controller
             $pdf = \PDF::setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
             $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
             return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
+        }else if($template == 7){
+            $pdf = App::make('dompdf.wrapper');
+            $pdf = \PDF::setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+            $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
+        }else if($template == 8){
+            $pdf = App::make('dompdf.wrapper');
+            $pdf = \PDF::setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+            $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            return $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf')->stream();
         }
     }
 }

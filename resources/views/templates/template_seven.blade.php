@@ -25,7 +25,7 @@
                     <input type="email" name="email" id="inputEmail" required ="true">
                     <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
             </form>
-            <form action="{{ route('descargar' , 4)}}">
+            <form action="{{ route('descargar' , 7)}}">
                 <button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
             </form>
         </div>

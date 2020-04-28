@@ -55,6 +55,12 @@ class MailSend extends Controller
         }else if($template == 6){
             $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
             $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf');
+        }else if($template == 7){
+            $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf');
+        }else if($template == 8){
+            $pdf = \PDF::loadView('templates.donwloads.download6', compact('contact','skills','projects','images','companys','contributions','degrees','hobbies','image','information'));
+            $pdf->setPaper(array(0, 0, 1300, 5000), 'portrait')->save(public_path().'/background/template.pdf');
         }
         //$details = $pdf;
 
