@@ -47,7 +47,7 @@ max-width: 1621px;
     border-color: #B07296;
     
 }
-
 nav#navbar {
     background-color: #191f22;
+    border-bottom: 1px solid #daab9d;
 }

@@ -122,7 +122,7 @@ p#namefile {
 } 
 #myInfoP {
     margin-left: 16%;
-    background-color: #fff;
+    background-color: #080808;
     margin-top: 10%;
     border: 0;
     width: 60%;
@@ -130,14 +130,14 @@ p#namefile {
 .d-flex.justify-content-center {
     margin-top: 130px;
 }
-.myFormP{
-    background-color:white;
+.myFormP {
+    background-color: #191f22;
     padding: 15px !important;
     border-radius: 15px !important;
-    color: black;
-    border-color: black;
+    color: white;
+    border-color: #040404;
     width: 100%;
-    margin-top: 5px;;
+    margin-top: 5px;
 }
     img#imgS {
         height: 320px;

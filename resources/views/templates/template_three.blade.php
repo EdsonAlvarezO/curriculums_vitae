@@ -10,13 +10,17 @@
 		<a class="btn btn-success" href="{{ route('template_four')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
 </div>
 	<div id="doc2" class="yui-t7">
-
+		@if (session('status'))
+            <div class="alert alert-success animated bounceInDown">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
 		<div id="inner">
 		<div class="sendAndDowload">
-			<form action=" {{route('contact')}}" method="POST">
+			<form action=" {{route('send-email', 3)}}" method="POST">
 					{{ csrf_field() }}
 					<label for="" id="email">Email:</label>
-					<input type="email" id="inputEmail" required ="true">
+					<input type="email" name="email" id="inputEmail" required ="true">
 					<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
 			</form>
 			<form action="{{ route('descargar', 3)}}">
@@ -112,10 +116,12 @@
 								<h2 id="titleI">Education</h2>
 							<div class="yui-u">
 								@if(sizeof($degrees) != 0)
-									@foreach($degrees as $degree)	
+									@foreach($degrees as $degree)
+									<div id="iP">	
 										<h2>Degree: {{$degree->name}}</h2>
 										<h3>{{$degree->description}} &mdash; <strong>Start:{{$degree->time_final . "  Conclude:" .$degree->time_start}}</strong> </h3>
 										<h3>{{$degree->website}}</h3>
+									</div>
 									@endforeach	
 								@endif
 							</div>
@@ -126,9 +132,11 @@
 								@if(sizeof($contributions) != 0)
 									@foreach($contributions as $contribution)	
 									<div id="contri">
-										<h2>Contribution: {{$contribution->name}}</h2>
-										<h3>{{$contribution->description}}</h3>
-										<h3>{{$contribution->url}}</h3>
+										<div id="iP">	
+											<h2>Contribution: {{$contribution->name}}</h2>
+											<h3>{{$contribution->description}}</h3>
+											<h3>{{$contribution->url}}</h3>
+										</div>
 									</div>	
 									@endforeach	
 								@endif
@@ -140,8 +148,10 @@
 								@if(sizeof($hobbies) != 0)
 									@foreach($hobbies as $hobbie)	
 									<div id="contri">
-										<h2>Hobbie: {{$hobbie->name}}</h2>
-										<h3>URL: {{$hobbie->url}}</h3>
+										<div id="iP">
+											<h2>Hobbie: {{$hobbie->name}}</h2>
+											<h3>URL: {{$hobbie->url}}</h3>
+										</div>
 									</div>	
 									@endforeach	
 								@endif
@@ -153,7 +163,6 @@
 			</div><!--// bd -->
 
 			<div id="ft">
-				<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
 			</div><!--// footer -->
 
 		</div><!-- // inner -->

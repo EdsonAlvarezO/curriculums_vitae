@@ -64,7 +64,7 @@
                 <div class="card-block">
                     <h4 class="card-title text-center" id="templateNumber">Table</h4>
                     <div class="btnView">
-                        <a href="{{ route('template_three')}}" id="btn" class="btn btn-success text-center"><i class="fas fa-eye"></i></a>
+                        <a href="{{ route('template_six')}}" id="btn" class="btn btn-success text-center"><i class="fas fa-eye"></i></a>
                     </div>
                 </div>
             </div>

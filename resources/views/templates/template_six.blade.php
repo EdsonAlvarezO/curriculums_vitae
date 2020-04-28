@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <head>
-        <link href="{{ public_path('css/template_four.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('css/template_four.css') }}" rel="stylesheet">
+        <link href="{{ public_path('css/template_six.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('css/template_six.css') }}" rel="stylesheet">
     </head>
     <body>
     
         <div class="backAndNext">
-            <a class="btn btn-success" href="{{ route('template_three')}}" id="btnBack"><i class="fas fa-hand-point-left"></i></a>
+            <a class="btn btn-success" href="{{ route('template_five')}}" id="btnBack"><i class="fas fa-hand-point-left"></i></a>
             <a class="btn btn-success " href="{{ route('templates')}}" id="btnAllTemplates">Templates</a>
             <a class="btn btn-success" href="{{ route('template_five')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
         </div>
@@ -19,13 +19,13 @@
             </div>
         @endif
         <div class="sendAndDowload">
-            <form action=" {{route('send-email', 4)}}" method="post">
+            <form action=" {{route('send-email', 6)}}" method="post">
                     {{ csrf_field() }}
                     <label for="" id="email">Email:</label>
                     <input type="email" name="email" id="inputEmail" required ="true">
                     <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
             </form>
-            <form action="{{ route('descargar' , 4)}}">
+            <form action="{{ route('descargar' , 6)}}">
                 <button class="btn btn-success animated pulse" href="" id="sendAndDownload">Download PDF <i class="fas fa-file-pdf"></i></button>
             </form>
         </div>

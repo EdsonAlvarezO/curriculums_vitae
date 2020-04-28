@@ -92,6 +92,8 @@ a#pdf:hover {
 .job {
  position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc;    margin-left: 41px;
  margin-right: 42px;
+ text-align: left;
+ 
 }
 .job h4 {
  position: absolute; top: 0.35em; right: 0
@@ -129,7 +131,9 @@ a#pdf:hover {
 }
 .yui-gf .yui-u{
  width:80.2%;
- background-color: black;
+ text-align: center;
+  background-color: black;
+    /* padding-left: 36px; */
 }
 .yui-gf div.first{
  width:12.3%;
@@ -226,5 +230,9 @@ img#pic2 {
 }
 img#pic{
   height: 202px;
-  margin-left: 370px;
+  margin-left: 277px;
+}
+div#iP {
+  border-bottom: 5px solid;
+  padding: 15px;
 }

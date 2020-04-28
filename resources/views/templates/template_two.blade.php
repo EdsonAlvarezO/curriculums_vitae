@@ -12,9 +12,10 @@
 		<a class="btn btn-success" href="{{ route('template_three')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
 </div>
 <div class="sendAndDowload">
-    <form action="" method="post">
+    <form action="{{route('send-email', 2)}}" method="post">
+            {{ csrf_field() }}
             <label for="" id="email">Email:</label>
-            <input type="email" id="inputEmail" required ="true">
+            <input type="email" name="email" id="inputEmail" required ="true">
             <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
     </form>
     <form action="{{ route('descargar' , 2)}}">
@@ -22,7 +23,11 @@
     </form>
 </div>
     <div id="page-wrap">
-
+    @if (session('status'))
+            <div class="alert alert-success animated bounceInDown">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
          @if(sizeof($images) != 0)
             @foreach($images as $img)
                 <img src="/images_user/{{$img->url}}" alt="Image" id="pic"/>
@@ -79,7 +84,7 @@
             <dd>
             @if( sizeof($skills)!= 0)
                 @foreach($skills as $skill)
-                <h2><strong>{{ $skill->name}}</strong></h2>
+                    <h2><strong>{{ $skill->name}}</strong></h2>
                     <p>Me level or experience in this skill is: {{$skill->level}}</p>
 			    @endforeach
 			@endif

@@ -6,13 +6,13 @@ html,body{
    /*background-image: linear-gradient(to right top, #e4e9f0, #d9dde4, #ced1d8, #c3c6cc, #b8bac0);*/
    background-color: black;
 }
-.myForm{
-    background-color:white;
+.myForm {
+    background-color: #191f22;
     padding: 15px !important;
     border-radius: 15px !important;
-    color: black;
+    color: white;
     border-color: black;
-    }
+}
 .d-flex.justify-content-center {
     margin-bottom: 50px;
 }
@@ -53,8 +53,10 @@ color: black;
 .table-wrapper-scroll-y {
     display: block;
     height: 360px;
-    background-color: #fff;
+    background-color: #181e20;
     border-radius: 5px;
+    color: #fff;
+    margin-right: 27px;
 }
 #myF{
 width: 90%;  
@@ -145,30 +147,30 @@ ul.pagination {
     border-color: #e0e7ef;
 }
 #headX {
-    background-color: #fff;
-    color: black;
+    background-color: #293a42;
+    color: #fffcfc;
     font-style: italic;
     border-style: inset;
     border-color: #f8f9fa;
     border-left: 0;
     border-width: 4px;
     font-size: 20px;
-    }
+}
 
 tbody {
-    background-color: #fff;
-    color: black;
-    }
+    background-color: #181e20;
+    color: white;
+}
 .circle-table {
     padding: 5px 22px !important;
     border-radius: 5px;
 }
-.myFormP{
-    background-color:white;
+.myFormP {
+    background-color: #191f22;
     padding: 15px !important;
     border-radius: 15px !important;
-    color: black;
+    color: #fefefe;
     border-color: black;
     width: 100%;
-    margin-top: 190px;;
+    margin-top: 190px;
 }

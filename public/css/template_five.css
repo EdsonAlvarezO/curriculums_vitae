@@ -46,14 +46,19 @@
     width: 72%;
     background-color: #008000cc;
     margin-left: 18%;
+    border-radius: 40px;
+    
 }
 div#infoContact {
     text-align: center;
     color: rgb(24, 56, 11);
+    /* border-color: azure; */
+    border-radius: 87px;
 }
 div#info {
     padding-top: 72px;
     padding-bottom: 21px;
+    
 }
 .inContac {
     padding-bottom: 22px;
@@ -66,8 +71,8 @@ p.tel {
 }
 h1.fn {
     border-bottom: 5px solid darkslategrey;
-    width: 50%;
-    margin-left: 246px;
+    width: 65%;
+    margin-left: 136px;
 }
 h1.fnP {
     border-bottom: 5px solid darkslategrey;
@@ -75,7 +80,7 @@ h1.fnP {
     margin-left: 30px;
 }
 div#education {
-    margin-left: 405px;
+    margin-left: 341px;
     padding-top: 20px;
     background-color: #3c633561;
     width: 55%;
@@ -96,14 +101,20 @@ h2#education {
     width: 400px;
 }
 div#asda {
-    margin-left: 218px;
-    /* width: 603px; */
+    margin-left: 70px;
+    /* width: 603px5 */
     padding-bottom: 10px;
-    
+    text-align: center;
+    border-bottom: 2px solid #304c4f;
+    width: 82%;
+    padding-top: 13px;
 }
 div#asdaP {
-    margin-left: 150px;
+    margin-left: 40px;
     /* width: 603px; */
     padding-bottom: 10px;
-    
+    text-align: center;
+    border-bottom: 2px solid #304c4f;
+    width: 82%;
+    padding-top: 13px;
 }

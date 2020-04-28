@@ -9,13 +9,17 @@
 		<a class="btn btn-success" href="{{ route('template_two')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
 	</div>
 	<div id="doc2" class="yui-t7">
-
+		@if (session('status'))
+            <div class="alert alert-success animated bounceInDown">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
 		<div id="inner">
 		<div class="sendAndDowload">
-			<form action=" {{route('contact')}}" method="POST">
+			<form action=" {{route('send-email', 1)}}" method="POST">
 					{{ csrf_field() }}
 					<label for="" id="email">Email:</label>
-					<input type="email" id="inputEmail" required ="true">
+					<input type="email" name="email" id="inputEmail" required ="true">
 					<button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
 			</form>
 			<form action="{{ route('descargar', 1)}}">

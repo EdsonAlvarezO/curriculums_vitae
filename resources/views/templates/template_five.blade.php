@@ -10,12 +10,18 @@
         <div class="backAndNext">
             <a class="btn btn-success" href="{{ route('template_four')}}" id="btnBack"><i class="fas fa-hand-point-left"></i></a>
             <a class="btn btn-success " href="{{ route('templates')}}" id="btnAllTemplates">Templates</a>
-            <a class="btn btn-success" href="{{ route('template_five')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
+            <a class="btn btn-success" href="{{ route('template_six')}}" id="btnBack"><i class="fas fa-hand-point-right"></i></a>
         </div>
+        @if (session('status'))
+            <div class="alert alert-success animated bounceInDown">
+            <h3 class="text-center">{{ session('status') }}</h3>
+            </div>
+        @endif
         <div class="sendAndDowload">
-            <form action="" method="post">
+            <form action=" {{route('send-email', 5)}}" method="post">
+            {{ csrf_field() }}
                     <label for="" id="email">Email:</label>
-                    <input type="email" id="inputEmail" required ="true">
+                    <input type="email"name="email"  id="inputEmail" required ="true">
                     <button class="btn btn-success animated pulse" id="sendAndDownload">Send by email <i class="fas fa-paper-plane"></i></button>
             </form>
             <form action="{{ route('descargar' , 5)}}">
